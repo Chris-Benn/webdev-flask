@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+  <head>
+  <title>First Python Site</title>
+  </head>
+  <body>
+  
+    <h1>Hello There is the JObs </h1>
+    <p>
+      {% for j in job %}
+      <div>
+        <h4>
+          {{j['title']}}
+          <div>
+            <b>Location: </b> {{j['location']}}
+          </div>
+          <div>
+            <b>Salery: </b> {{j['salery']}}
+          </div>
+        </h4>
+      </div>
+      {% endfor %}
+    </p>
+  </body>
+</html>
